@@ -1,0 +1,31 @@
+.login {
+  text-decoration: none;
+  padding: 0px 0px 0px 60px;
+  color: beige;
+    &:hover {
+      color: wheat;
+      text-decoration: none;
+    }
+}
+.logo{
+  padding: 10px 0px 10px 335px;
+}
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+.floatright{
+  padding-left: 700px;
+  float: right;
+}
+@media screen and (max-width: 700px){
+  .floatright{
+    float: none;
+    padding: 0%;
+}
+.login {
+  padding: 30px 0px 0px 0px;
+}
+.logo{
+  padding: 0px;
+}
+} 
