@@ -10,9 +10,11 @@ const Slides = () => {
           src="https://stamen.com/wp-content/uploads/2016/08/stamen-workshop-crop.jpg"
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption className={styles.caption}>
+          <div className={styles.borders}>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -21,8 +23,7 @@ const Slides = () => {
           src="https://www.nyfa.edu/img/program/digital_editing_4week_1400x500_1.jpg?v=2.2"
           alt="second slide"
         />
-
-        <Carousel.Caption>
+        <Carousel.Caption className={styles.caption}>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
@@ -34,7 +35,7 @@ const Slides = () => {
           alt="Third slide"
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption className={styles.caption}>
           <h3>Third slide label</h3>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </Carousel.Caption>

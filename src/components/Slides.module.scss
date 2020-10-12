@@ -3,9 +3,16 @@
   width: 100%;
 }
 
+.caption {
+  padding-bottom: 300px;
+}
+
 @media screen and (max-width: 700px) {
   .images {
     height: 200px;
     width: 100%;
+  }
+  .caption {
+    padding-bottom: none;
   }
 }

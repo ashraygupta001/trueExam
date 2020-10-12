@@ -9,6 +9,11 @@
 }
 .logo{
   padding: 10px 0px 10px 335px;
+  color: white;
+    &:hover{
+      text-decoration: none;
+      color: white;
+    }
 }
 .navbar {
   background-color: rgb(0, 0, 0);
