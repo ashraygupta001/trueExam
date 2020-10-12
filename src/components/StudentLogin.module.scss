@@ -1,36 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
-*{
-  overflow: hidden;
-}
+// *{
+//   overflow: hidden;
+// }
 .page {
   background-image: url('./../assets/loginBackground.png');
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 950px;
-  display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: 1fr 7fr 1fr;
+  height: 100vh;
+  // display: grid;
+  // grid-template-columns: 1fr 6fr 1fr;
+  // grid-template-rows: 1fr 7fr 1fr;
 }
-.inner{
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 
-             0 0  0 2px rgb(255, 255, 255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);;
-  background-color: white;
-  display: inline-block;
-  grid-column: 2/3 ;
-  grid-row: 2/3;
-  display: grid;
-  grid-template-rows: 1fr 6fr  ;
-  grid-template-columns: 2fr 2fr 4fr;
+.upperbox{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #ffffff 1px;
+    background: #ffffff;
+    height: 300px;
 }
+// .inner{
+//   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 
+//              0 0  0 2px rgb(255, 255, 255),
+//              0.3em 0.3em 1em rgba(0,0,0,0.3);;
+//   background-color: white;
+//   display: inline-block;
+//   grid-column: 2/3 ;
+//   grid-row: 2/3;
+//   display: grid;
+//   grid-template-rows: 1fr 6fr  ;
+//   grid-template-columns: 2fr 2fr 4fr;
+// }
 .logo {
   align-self: center;
   justify-self: center;
   font-family: 'Kalam', cursive;
   font-size: 30px;
 }
+<<<<<<< HEAD
 .linkLogo {
   color: black;
 }
@@ -40,31 +47,38 @@
   align-self: center;
   justify-self: center;
 }
+=======
+// .image{
+//   grid-row: 2/3;
+//   grid-column: 1/3;
+//   align-self: center;
+//   justify-self: center;
+// }
+>>>>>>> f41e98dd641bc138dced48e68fce516d8af3dd2f
 .welcomeLogo{
   font-family: 'Kalam', cursive;
   font-size: 30px;
-  grid-column: 3/4;
   justify-self: center;
   align-self: center;
 }
-.welcomeContent {
-  display: grid;
-  grid-template-columns: 1fr 7fr 1fr;
-  grid-template-rows: 1fr 15fr 1fr;
-}
-.ranContent {
-  grid-column: 2/3;
- justify-self: center;
-}
-.loginOptions{
-  grid-row: 2/3;
-  grid-column: 1/4;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 7fr;
-}
-.loginForm{
-  grid-column: 1/3;
-  justify-self: center;
-  align-self: center;
-}
+// .welcomeContent {
+//   display: grid;
+//   grid-template-columns: 1fr 7fr 1fr;
+//   grid-template-rows: 1fr 15fr 1fr;
+// }
+// .ranContent {
+//   grid-column: 2/3;
+//  justify-self: center;
+// }
+// .loginOptions{
+//   grid-row: 2/3;
+//   grid-column: 1/4;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-template-rows: 1fr 7fr;
+// }
+// .loginForm{
+//   grid-column: 1/3;
+//   justify-self: center;
+//   align-self: center;
+// }
