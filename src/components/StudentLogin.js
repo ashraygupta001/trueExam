@@ -19,7 +19,7 @@ const StudentLogin = () => {
           <Card style={{ marginTop: '2rem',boxShadow:'5px 5px 5px #aaaaaa',height:'600px'}}>
             <Card.Body>
               <div className={styles.logo}>
-            Hellow world
+              Editing-Bootcamp
             </div>
                 <Container fluid>
                   <Row>
