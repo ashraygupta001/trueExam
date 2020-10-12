@@ -1,10 +1,16 @@
 import React, { Fragment, useState } from 'react';
 import styles from './StudentLogin.module.scss';
-import { Button } from 'react-bootstrap';
-import login  from "./../assets/login.jpg";
+import { Button, Form } from 'react-bootstrap';
+import login from "./../assets/login.jpg";
+import { Link } from '@reach/router'
 const StudentLogin = () => {
   const [student, setStudent] = useState(true);
-  const [teacher, setTeacher] = useState(false);
+  const studentClick = (e) => {
+   setStudent(true)
+  }
+  const teacherClick = (e) => {
+    setStudent(false)
+  }
   return (
     <Fragment>
       <div className={styles.page} >
@@ -26,11 +32,67 @@ const StudentLogin = () => {
             </div>
             <div className={styles.loginOptions}>
               <div style={{justifySelf:"end", alignSelf:"center", paddingRight:20}}>
-               <Button variant="outline-primary">Student-Login</Button>
+                <Button variant="outline-primary" onClick={studentClick}>Student-Login{ student && <span role="img" aria-label="here">📌</span> }</Button>
               </div>
               <div style={{justifySelf:"start", alignSelf:"center",paddingLeft:20}}>
-               <Button variant="outline-primary">Instructor-Login</Button>
+               <Button variant="outline-primary" onClick={teacherClick}>Instructor-Login{ !student && <span role="img" aria-label="here">📌</span> }</Button>
               </div>
+              {
+                student && (
+                  <div className={styles.loginForm}>
+                <Form>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+                  </Form.Text>
+                </Form.Group>
+
+                <Form.Group controlId="formBasicPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+                <Form.Group controlId="formBasicCheckbox">
+                  <Form.Check type="checkbox" label="Remember me" />
+                      </Form.Group>
+                      <Link to='/stuent-dashboard'>
+                        <Button variant="info" type="submit">
+                                  Submit
+                        </Button>
+                      </Link>
+              </Form>
+              </div>
+                )
+              }
+              {
+                !student && (
+                  <div className={styles.loginForm}>
+                <Form>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+                  </Form.Text>
+                </Form.Group>
+
+                <Form.Group controlId="formBasicPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+                <Form.Group controlId="formBasicCheckbox">
+                  <Form.Check type="checkbox" label="Remember me" />
+                </Form.Group>
+                <Link to='/instructor-dashboard'>
+                        <Button variant="info" type="submit">
+                                  Submit
+                        </Button>
+                </Link>
+              </Form>
+              </div>
+                )
+              }
             </div>
           </div>
         </div>
