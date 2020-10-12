@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
-*{
-  overflow: hidden;
-}
+
 .page {
   background-image: url('./../assets/loginBackground.png');
   background-repeat: no-repeat;
@@ -13,6 +11,7 @@
   grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: 1fr 7fr 1fr;
 }
+
 .inner{
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 
              0 0  0 2px rgb(255, 255, 255),
@@ -34,37 +33,8 @@
 .linkLogo {
   color: black;
 }
-.image{
-  grid-row: 2/3;
-  grid-column: 1/3;
-  align-self: center;
-  justify-self: center;
-}
-.welcomeLogo{
-  font-family: 'Kalam', cursive;
-  font-size: 30px;
-  grid-column: 3/4;
-  justify-self: center;
-  align-self: center;
-}
-.welcomeContent {
-  display: grid;
-  grid-template-columns: 1fr 7fr 1fr;
-  grid-template-rows: 1fr 15fr 1fr;
-}
-.ranContent {
-  grid-column: 2/3;
- justify-self: center;
-}
-.loginOptions{
-  grid-row: 2/3;
+.cardTasks{
   grid-column: 1/4;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 7fr;
-}
-.loginForm{
-  grid-column: 1/3;
-  justify-self: center;
-  align-self: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }

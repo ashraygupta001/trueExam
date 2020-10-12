@@ -1,11 +1,9 @@
-import React, {Fragment} from 'react';
-import NavBar from './NavBar';
-import Slides from './Slides'
+import React, { Fragment } from 'react';
+import StudentLogin from './StudentLogin'
 const Home = () => {
   return (
     <Fragment>
-      <NavBar />
-      <Slides />
+      <StudentLogin />
    </Fragment>
   )
 }

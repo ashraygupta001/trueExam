@@ -16,9 +16,11 @@ const StudentLogin = () => {
       <div className={styles.page} >
         <div className={styles.inner}>
           <div className={styles.logo}>
-            <p>
-              Editing-Bootcamp
-            </p>
+            <Link to='/'>
+              <p className={styles.linkLogo}>
+                Editing-Bootcamp
+              </p>
+            </Link>
           </div>
           <div className={styles.image}>
             <img src={login} alt="login" />
